@@ -65,28 +65,37 @@
 	      <version>1.18.24</version>
 	      <scope>provided</scope>
 	    </dependency>
+	    
 	    <dependency>
 	      <groupId>org.apache.opennlp</groupId>
 	      <artifactId>opennlp-tools</artifactId>
 	      <version>2.3.1</version>
 	    </dependency>
+	    
 	    <dependency>
 	      <groupId>com.github.mpkorstanje</groupId>
 	      <artifactId>simmetrics-core</artifactId>
 	      <version>4.1.1</version>
 	    </dependency>
+	    
 	    <dependency>
 	      <groupId>com.azure</groupId>
 	      <artifactId>azure-identity</artifactId>
 	      <version>1.10.3</version>
 	    </dependency>
+	    
 	    <dependency>
 	      <groupId>com.microsoft.graph</groupId>
 	      <artifactId>microsoft-graph</artifactId>
 	      <version>5.80.0</version>
 	    </dependency>
 	    
-  
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>
+   <!-- <scope>test</scope> -->
+</dependency>
   
   </dependencies>
 </project>

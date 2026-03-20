@@ -19,11 +19,12 @@ public class WebDriverMethods {
 	WebDriver driver = null;
 	int impWaitTime = 20;
 	int explicitWaitTime = 20;
-	Actions act = new Actions(driver);
+	Actions act;
 	
 	//constructor
 	public WebDriverMethods(WebDriver driver) {
 		this.driver = driver;
+		this.act = new Actions(driver);
 	}
 	
 	public WebDriver getWebDriver() {
@@ -303,6 +304,9 @@ public class WebDriverMethods {
                 x, y
         );
     }
+    
+   
+    
 	  
     
     

@@ -1,4 +1,4 @@
-package GenericUtilities;
+package genericUtilities;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,6 +31,7 @@ public class ExcelFileUtility {
 	 * @throws EncryptedDocumentException
 	 * @throws IOException
 	 */
+	
 	public Map<String, Object> getDataFromSingleRowAsMap(String sheetName, String uniqueValue, int uniqueColIdx) throws EncryptedDocumentException, IOException {
 
 		Map<String, Object> map = new HashMap<String, Object>();
