@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-20T12:25:33 IST" name="Default suite" finished-at="2026-03-20T12:25:36 IST" duration-ms="2784">
+  <suite started-at="2026-04-18T17:35:09 IST" name="Default suite" finished-at="2026-04-18T17:35:29 IST" duration-ms="19742">
     <groups>
     </groups>
-    <test started-at="2026-03-20T12:25:33 IST" name="Default test" finished-at="2026-03-20T12:25:36 IST" duration-ms="2784">
+    <test started-at="2026-04-18T17:35:09 IST" name="Default test" finished-at="2026-04-18T17:35:29 IST" duration-ms="19742">
       <class name="testCases.TestClass">
-        <test-method is-config="true" signature="btConfig()[pri:0, instance:testCases.TestClass@4a668b6e]" started-at="2026-03-20T12:25:33 IST" name="btConfig" finished-at="2026-03-20T12:25:35 IST" duration-ms="2423" status="PASS">
+        <test-method is-config="true" signature="btConfig()[pri:0, instance:testCases.TestClass@2cdd0d4b]" started-at="2026-04-18T17:35:09 IST" name="btConfig" finished-at="2026-04-18T17:35:20 IST" duration-ms="11675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- btConfig -->
-        <test-method is-config="true" signature="bmLogin()[pri:0, instance:testCases.TestClass@4a668b6e]" started-at="2026-03-20T12:25:35 IST" name="bmLogin" finished-at="2026-03-20T12:25:36 IST" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="bmLogin()[pri:0, instance:testCases.TestClass@2cdd0d4b]" started-at="2026-04-18T17:35:21 IST" name="bmLogin" finished-at="2026-04-18T17:35:21 IST" duration-ms="430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmLogin -->
-        <test-method signature="test()[pri:0, instance:testCases.TestClass@4a668b6e]" started-at="2026-03-20T12:25:36 IST" name="test" finished-at="2026-03-20T12:25:36 IST" duration-ms="8" status="PASS">
+        <test-method signature="createAccount()[pri:0, instance:testCases.TestClass@2cdd0d4b]" started-at="2026-04-18T17:35:21 IST" name="createAccount" finished-at="2026-04-18T17:35:28 IST" duration-ms="7539" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-332" type="button" aria-expanded="false" aria-haspopup="listbox" role="combobox" data-value="--None--" aria-disabled="false" aria-label="Type" aria-required="false" part="input-button" aria-controls="dropdown-element-332">...</button> is not clickable at point (482, 536). Other element would receive the click: <records-form-footer lwc-6ct7qgg1o86="" class="slds-docked-form-footer fixedFooter slds-modal__footer" lwc-34n15cmj79s-host=""></records-form-footer>
+  (Session info: chrome=147.0.7727.101)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a65acbd09f04bd73d82b5af9c47eae0b, clickElement {id=f.A2962682042B9CA5438D58AFB08E4C81.d.14AE3241B82FD94E607CA70E0CD23E25.e.2903}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.101, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: 127.0.0.1:52202}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://127.0.0.1:52202/devtoo..., se:cdpVersion: 147.0.7727.101, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on any (a65acbd09f04bd73d82b5af9c47eae0b)] -> xpath: //label[.='Type']/ancestor::lightning-combobox/descendant::button[@data-value='--None--']]
+Session ID: a65acbd09f04bd73d82b5af9c47eae0b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button lwc-4kb6kaqheak="" class="slds-combobox__input slds-input_faux fix-slds-input_faux slds-combobox__input-value" id="combobox-button-332" type="button" aria-expanded="false" aria-haspopup="listbox" role="combobox" data-value="--None--" aria-disabled="false" aria-label="Type" aria-required="false" part="input-button" aria-controls="dropdown-element-332">...</button> is not clickable at point (482, 536). Other element would receive the click: <records-form-footer lwc-6ct7qgg1o86="" class="slds-docked-form-footer fixedFooter slds-modal__footer" lwc-34n15cmj79s-host=""></records-form-footer>
+  (Session info: chrome=147.0.7727.101)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a65acbd09f04bd73d82b5af9c47eae0b, clickElement {id=f.A2962682042B9CA5438D58AFB08E4C81.d.14AE3241B82FD94E607CA70E0CD23E25.e.2903}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.101, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: 127.0.0.1:52202}, pageLoadStrategy: normal, platformName: any, proxy: Proxy(), se:cdp: ws://127.0.0.1:52202/devtoo..., se:cdpVersion: 147.0.7727.101, setWindowRect: false, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on any (a65acbd09f04bd73d82b5af9c47eae0b)] -> xpath: //label[.='Type']/ancestor::lightning-combobox/descendant::button[@data-value='--None--']]
+Session ID: a65acbd09f04bd73d82b5af9c47eae0b
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at objectRepository.NewAccountPage.createAccount(NewAccountPage.java:148)
+at testCases.TestClass.createAccount(TestClass.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
+        </test-method> <!-- createAccount -->
       </class> <!-- testCases.TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

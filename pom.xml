@@ -6,11 +6,13 @@
   
   <dependencies>
   		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-		    <groupId>org.seleniumhq.selenium</groupId>
-		    <artifactId>selenium-java</artifactId>
-		    <version>4.34.0</version>
-		</dependency>
+		<!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.43.0</version>
+    <scope>compile</scope>
+</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 		<dependency>
@@ -95,6 +97,12 @@
     <artifactId>testng</artifactId>
     <version>7.4.0</version>
    <!-- <scope>test</scope> -->
+</dependency>
+
+<dependency>
+    <groupId>com.sun.mail</groupId>
+    <artifactId>jakarta.mail</artifactId>
+    <version>2.0.1</version>
 </dependency>
   
   </dependencies>

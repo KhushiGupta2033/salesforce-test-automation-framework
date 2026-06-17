@@ -5,8 +5,9 @@
     <classes>
       <class name="testCases.TestClass">
         <methods>
+          <include name="createAccount"/>
           <include name="btConfig"/>
-          <include name="test"/>
+          <include name="bmLogin"/>
         </methods>
       </class> <!-- testCases.TestClass -->
     </classes>

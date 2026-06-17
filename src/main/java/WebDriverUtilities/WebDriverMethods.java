@@ -4,7 +4,6 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.InputEvent;
 import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
@@ -29,6 +28,10 @@ public class WebDriverMethods {
 	
 	public WebDriver getWebDriver() {
 		return driver;
+	}
+	
+	public void navigateToWebsite(String url) {
+		driver.navigate().to(url);
 	}
 	
 	public void explicitlyWaitTime(int sec) {
@@ -78,6 +81,21 @@ public class WebDriverMethods {
 		return driver.getPageSource();
 	}
 	
+	public void refreshPage() {
+		driver.navigate().refresh();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+	}
+	public boolean isClickable(WebElement ele) {
+		try {
+		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.elementToBeClickable(ele));
+	    return true;
+		}
+		catch (Exception e) {
+			return false;
+		}
+	}
 	public void explicitlyWaitUntilElementVisible(WebElement ele) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(explicitWaitTime));
 		wait.until(ExpectedConditions.visibilityOf(ele));
@@ -138,7 +156,6 @@ public class WebDriverMethods {
 			return false;
 		}
 	}
-	
 	
 	public void waitForSeconds(int sec) throws InterruptedException {
 		Thread.sleep(sec);

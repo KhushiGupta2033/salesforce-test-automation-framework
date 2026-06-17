@@ -76,24 +76,35 @@ public class ExcelFileUtility {
 	
 	
 	private Object getCellValue(Cell cell) {
+	    if (cell == null) return null;
+
 	    switch (cell.getCellType()) {
 	        case STRING:
 	            return cell.getStringCellValue();
+
 	        case NUMERIC:
 	            if (DateUtil.isCellDateFormatted(cell)) {
 	                return cell.getDateCellValue();
 	            }
-	            return cell.getNumericCellValue();
+	            double num = cell.getNumericCellValue();
+
+	            // remove .0 if it's a whole number
+	            if (num == (long) num) {
+	                return String.valueOf((long) num);
+	            } else {
+	                return String.valueOf(num);
+	            }
+
 	        case BOOLEAN:
-	            return cell.getBooleanCellValue();
+	            return String.valueOf(cell.getBooleanCellValue());
+
 	        case FORMULA:
 	            return cell.getCellFormula();
-	        case BLANK:
+
 	        default:
 	            return null;
 	    }
 	}
-	
 	/**
 	 * this method will fetch the  value based on key in map
 	 * @param map
